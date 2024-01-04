@@ -24,7 +24,7 @@ public class AuthenticatedUser {
         return authenticationContext.getAuthenticatedUser(UserDetails.class)
                 .map(userDetails -> userRepository.findByUsername(userDetails.getUsername()));
     }
-
+    
     public void logout() {
         authenticationContext.logout();
     }

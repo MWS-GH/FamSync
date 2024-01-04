@@ -22,7 +22,9 @@ import org.springframework.context.annotation.Bean;
 @Theme(value = "fam-sync", variant = Lumo.DARK)
 public class Application implements AppShellConfigurator {
 
-    public static void main(String[] args) {
+    private static final long serialVersionUID = -2621915289401955583L;
+
+	public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
