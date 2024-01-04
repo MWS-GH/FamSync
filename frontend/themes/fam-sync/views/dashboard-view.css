@@ -1,0 +1,8 @@
+[theme~="separated-columns"] [part~="cell"]::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--lumo-contrast-10pct);
+}
