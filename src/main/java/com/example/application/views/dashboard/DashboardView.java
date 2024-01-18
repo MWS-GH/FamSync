@@ -42,7 +42,7 @@ public class DashboardView extends VerticalLayout {
         LocalDate startOfWeek = currentDate.minusDays(currentDate.getDayOfWeek().getValue() - 1);
         LocalDate endOfWeek = startOfWeek.plusDays(6);
 
-        // Erstellen Sie ein Grid für die Tage der Woche
+        // Erstellung des Wochengrids - Button zum springen auf die vorherige sowie nächste Woche einfügen
         Grid<LocalDate> weekGrid = new Grid<>();
         weekGrid.setWidthFull();
 
